@@ -37,16 +37,12 @@ http://play1-qk.nmtv.cn/live/1735546697341033.m3u8
 https://stream.hrbtv.net/xwzh/playlist.m3u8?_upt=ef41dd531755913594
 #EXTINF:-1 tvg-id="LanzhouComprehensiveNewsChannel.cn@SD" tvg-name="Lanzhou Comprehensive News Channel" tvg-logo="https://p3-pc.douyinpic.com/img/aweme-avatar/tos-cn-avt-0015_c2a13a952c0111b21f081d672798c8ed~c5_300x300.jpeg?from=2956013662" group-title="🇨🇳 中文新闻",Lanzhou Comprehensive News Channel
 https://liveplus.lzr.com.cn/xwzh/HD/live.m3u8
-#EXTINF:-1 tvg-id="CCTVStormFootball.cn@HD" tvg-name="CCTV 风云足球" tvg-logo="https://i.imgur.com/Fy6HkX0.png" group-title="🇨🇳 中文体育",CCTV 风云足球
-http://38.75.136.137:98/gslb/dsdqpub/fyzq.m3u8?auth=testpub
 #EXTINF:-1 tvg-id="CCTV5.cn" tvg-name="CCTV-5 体育" tvg-logo="https://gitee.com/mytv-android/myTVlogo/raw/main/img/CCTV5.png" group-title="🇨🇳 中文体育",CCTV-5 体育
 http://104.152.209.49:8181/720p/cctv5.m3u8
 #EXTINF:-1 tvg-id="CCTVGolfTennis.cn@HD" tvg-name="CCTV 高尔夫网球" tvg-logo="https://i.imgur.com/iqJJTmH.png" group-title="🇨🇳 中文体育",CCTV 高尔夫网球
 http://63.141.230.178:82/gslb/zbdq5.m3u8?id=gefwq
 #EXTINF:-1 tvg-id="CCTV5Plus.cn" tvg-name="CCTV-5+ 体育赛事" tvg-logo="https://gitee.com/mytv-android/myTVlogo/raw/main/img/CCTV5+.png" group-title="🇨🇳 中文体育",CCTV-5+ 体育赛事
 http://173.208.234.146/live/cctv5p.m3u8
-#EXTINF:-1 tvg-id="AlJazeeraEnglish.qa" tvg-name="Al Jazeera English" tvg-logo="https://i.imgur.com/BB93NQP.png" group-title="🌍 国际新闻",Al Jazeera English
-https://live-hls-apps-aje-fa.getaj.net/AJE/index.m3u8
 #EXTINF:-1 tvg-id="BloombergTelevision.us" tvg-name="Bloomberg Television" tvg-logo="https://i.imgur.com/VnCcH73.png" group-title="🌍 国际新闻",Bloomberg Television
 https://bloomberg.com/media-manifest/streams/us.m3u8
 #EXTINF:-1 tvg-id="BloombergTVPlus.us" tvg-name="Bloomberg TV+" tvg-logo="https://i.imgur.com/xGlToly.png" group-title="🌍 国际新闻",Bloomberg TV+
@@ -77,8 +73,6 @@ https://bein-xtra-bein.amagi.tv/playlist.m3u8
 https://jmp2.uk/plu-5ebc8688f3697d00072f7cf8.m3u8
 #EXTINF:-1 tvg-id="CBSSportsHQ.us@SD" tvg-name="CBS Sports HQ" tvg-logo="https://i.imgur.com/q8BENJg.png" group-title="⚽ 国际体育",CBS Sports HQ
 https://jmp2.uk/plu-5e9f2c05172a0f0007db4786.m3u8
-#EXTINF:-1 tvg-id="DraftKingsNetwork.us@SD" tvg-name="DraftKings Network" tvg-logo="https://i.imgur.com/SFYhgrt.png" group-title="⚽ 国际体育",DraftKings Network
-https://na.linear.zype.com/e0bd0e23-a958-4e43-8164-4f2fef8876a8/fd3614bd-90bf-4530-a277-65ae3a1720c8-zype/live.m3u8
 #EXTINF:-1 tvg-id="FIFAPlus.uk@UnitedStates" tvg-name="FIFA+" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9c/FIFA%2B_(2025).svg/960px-FIFA%2B_(2025).svg.png" group-title="⚽ 国际体育",FIFA+
 https://d2w9q46ikgrcwx.cloudfront.net/v1/master/3722c60a815c199d9c0ef36c5b73da68a62b09d1/cc-of5cbk3sav3w5/v1/sysdata_s_p_a_fifa_7/samsungheadend_us/latest/main/hls/playlist.m3u8
 #EXTINF:-1 tvg-id="FITE247.us@SD" tvg-name="FITE 24/7" tvg-logo="https://i.imgur.com/ESV6qgH.png" group-title="⚽ 国际体育",FITE 24/7
@@ -119,5 +113,43 @@ https://d1t5afz6qed3xk.cloudfront.net/Unbeaten.m3u8
 https://cffda8ff.wurl.com/master/f36d25e7e52f1ba8d7e56eb859c636563214f541/U2Ftc3VuZy1nYl9GSUZBUGx1c3dvbWVuX0hMUw/playlist.m3u8
 #EXTINF:-1 tvg-id="FloRacing.us@HD" tvg-name="FloRacing" tvg-logo="https://images.fubo.tv/channel-config-ui/station-logos/on-dark/floracing-white.png" group-title="⚽ 国际体育",FloRacing
 https://amg02278-amg02278c1-flosports-worldwide-7592.playouts.now.amagi.tv/playlist.m3u8
-#EXTINF:-1 tvg-id="jidaigekisenmonchannel.jp" tvg-name="時代劇専門チャンネル" tvg-logo="https://www.skyperfectv.co.jp/library/common/img/channel/icon/basic/cs292.gif" group-title="🎬 电视剧",時代劇専門チャンネル
+#EXTINF:-1 tvg-id="DAZNDartsxPlutoTV.de@DACH" tvg-name="DAZN Darts x Pluto TV" tvg-logo="https://images.pluto.tv/channels/64b67f0424ade50008a3be17/colorLogoPNG.png" group-title="⚽ 国际体育",DAZN Darts x Pluto TV
+https://jmp2.uk/plu-64b67f0424ade50008a3be17.m3u8
+#EXTINF:-1 tvg-id="jidaigekisenmonchannel.jp" tvg-name="時代劇専門チャンネル" tvg-logo="https://www.skyperfectv.co.jp/library/common/img/channel/icon/basic/cs292.gif" group-title="🎬 日语影视",時代劇専門チャンネル
 https://naori-test.netgenx.site/pxx.php?shk_cid=cs04#.m3u8
+#EXTINF:-1 tvg-id="nihoneigasenmonchannel.jp" tvg-name="日本映画専門チャンネル" tvg-logo="https://www.skyperfectv.co.jp/library/common/img/channel/icon/basic/bs255.gif" group-title="🎬 日语影视",日本映画専門チャンネル
+https://naori-test.netgenx.site/pxx.php?shk_cid=bs23#.m3u8
+#EXTINF:-1 tvg-id="homedramachannel.jp" tvg-name="ホームドラマチャンネル" tvg-logo="https://www.skyperfectv.co.jp/library/common/img/channel/icon/basic/cs294.gif" group-title="🎬 日语影视",ホームドラマチャンネル
+https://naori-test.netgenx.site/pxx.php?shk_cid=cs05#.m3u8
+#EXTINF:-1 tvg-id="familygekijyo.jp" tvg-name="ファミリー劇場" tvg-logo="https://www.skyperfectv.co.jp/library/common/img/channel/icon/basic/cs293.gif" group-title="🎬 日语影视",ファミリー劇場
+https://naori-test.netgenx.site/pxx.php?shk_cid=cs20#.m3u8
+#EXTINF:-1 tvg-id="movieplus.jp" tvg-name="ムービープラス" tvg-logo="https://www.skyperfectv.co.jp/library/common/img/channel/icon/basic/cs240.gif" group-title="🎬 日语影视",ムービープラス
+https://naori-test.netgenx.site/pxx.php?shk_cid=cs14#.m3u8
+#EXTINF:-1 tvg-id="eiseigekijo.jp" tvg-name="衛星劇場" tvg-logo="https://www.skyperfectv.co.jp/library/common/img/channel/icon/basic/cs219.gif" group-title="🎬 日语影视",衛星劇場
+https://naori-test.netgenx.site/pxx.php?shk_cid=cs22#.m3u8
+#EXTINF:-1 tvg-id="CCTV6.cn@HD" tvg-name="CCTV-6 电影" tvg-logo="https://i.imgur.com/rFiaef7.png" group-title="🎬 中文影视",CCTV-6 电影
+http://69.30.245.50/live/cctv6.m3u8
+#EXTINF:-1 tvg-id="CCTV8.cn@SD" tvg-name="CCTV-8 电视剧" tvg-logo="https://i.imgur.com/GyHaZ8X.png" group-title="🎬 中文影视",CCTV-8 电视剧
+http://74.91.26.218:82/live/cctv8hd.m3u8
+#EXTINF:-1 tvg-id="HarbinMovieChannel.cn@SD" tvg-name="Harbin Movie Channel" tvg-logo="https://www.tvchinese.net/uploads/tv/haerbin.jpg" group-title="🎬 中文影视",Harbin Movie Channel
+https://stream.hrbtv.net/yspd/playlist.m3u8
+#EXTINF:-1 tvg-id="AsianDrama.hk@SD" tvg-name="亚洲剧场（香港）" tvg-logo="https://i.imgur.com/wqtN7mH.png" group-title="🎬 中文影视",亚洲剧场（香港）
+http://103.172.187.30:12000/stream/mytv/null-11/master.m3u8
+#EXTINF:-1 tvg-id="MeiAhMovieChannel.hk@SD" tvg-name="美亚电影台" tvg-logo="https://i.imgur.com/laGiFM1.png" group-title="🎬 中文影视",美亚电影台
+http://103.172.187.30:12000/stream/mytv/null-9/master.m3u8
+#EXTINF:-1 tvg-id="GravitasMovies.us@SD" tvg-name="Gravitas Movies" tvg-logo="https://i.imgur.com/H2hD4vT.png" group-title="🎬 英语影视",Gravitas Movies
+https://d6dg3ebeih71x.cloudfront.net/Gravitas_Movies.m3u8
+#EXTINF:-1 tvg-id="HallmarkMoviesMore.us@SD" tvg-name="Hallmark Movies & More" tvg-logo="https://provider-static.plex.tv/epg/cms/production/29af70d1-d3ba-4a16-bc4d-bd99e7e7def4/hallmark-movies-and-more_color.png" group-title="🎬 英语影视",Hallmark Movies & More
+https://dbrb49pjoymg4.cloudfront.net/v1/master/3fec3e5cac39a52b2132f9c66c83dae043dc17d4/prod_default_xumo-ams-aws/master.m3u8?ads.xumo_channelId=99991709
+#EXTINF:-1 tvg-id="MaverickBlackCinema.us@SD" tvg-name="Maverick Black Cinema" tvg-logo="https://images.fubo.tv/station_logos/maverick_black_cinema_c.png" group-title="🎬 英语影视",Maverick Black Cinema
+https://maverick-maverick-black-cinema-3-us.roku.wurl.tv/playlist.m3u8
+#EXTINF:-1 tvg-id="MovieSphere.us@US" tvg-name="MovieSphere" tvg-logo="https://i.imgur.com/h1ejU90.png" group-title="🎬 英语影视",MovieSphere
+https://amg00353-lionsgatestudio-moviesphere-xumo-zh5u0.amagi.tv/playlist.m3u8
+#EXTINF:-1 tvg-id="TheFilmDetective.us@SD" tvg-name="The Film Detective" tvg-logo="https://i.imgur.com/yfOwmsP.png" group-title="🎬 英语影视",The Film Detective
+https://cinedigm-entertainment-corp-thefilmdetective-1-us.ono.wurl.tv/playlist.m3u8
+#EXTINF:-1 tvg-id="DoctorWhoClassic.us@US" tvg-name="Doctor Who Classic" tvg-logo="https://i.imgur.com/JIqJQQM.png" group-title="🎬 英语影视",Doctor Who Classic
+https://bbc-classicdrwho-1-us.roku.wurl.tv/playlist.m3u8
+#EXTINF:-1 tvg-id="MidsomerMurders.us@SD" tvg-name="Midsomer Murders" tvg-logo="https://i.imgur.com/VFqfyfY.png" group-title="🎬 英语影视",Midsomer Murders
+https://all3media-midsomer-1-us.roku.wurl.tv/playlist.m3u8
+#EXTINF:-1 tvg-id="JOABDTV.jp" tvg-name="NHK Eテレ（東京）" tvg-logo="https://i.imgur.com/WxtftlO.png" group-title="🎓 日语学习·教育",NHK Eテレ（東京）
+https://naori-test.netgenx.site/pxx.php?shk_cid=hdgd02#.m3u8
