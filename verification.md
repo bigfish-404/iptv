@@ -1,9 +1,9 @@
 # IPTV Verification Report
 
-验证时间：2026-10-01 10:27:55 JST
+验证时间：2026-10-01 10:45:58 JST
 网络位置：Japan（出口国家码 JP，使用 ipinfo.io 检查）
-候选频道：113 个不同 HLS URL
-首轮通过：68；首轮失败：45
+候选频道：123 个不同 HLS URL
+首轮通过：73；首轮失败：50；后续完整片段测速中原 CCTV-5 源超时并移除
 最终 M3U：60 个频道；重新读取文件后第二轮通过：60；第二轮失败：0
 
 验证标准：对原始 URL 执行 GET，跟随重定向；读取 master M3U8，若存在 variant 则读取最高可用 variant 的 media playlist；检查片段列表并 GET 最近片段（最多尝试最近 3 个）。若媒体使用 CMAF 初始化片段或 AES-128 密钥，也请求对应资源。没有使用 HEAD 代替 GET。HTTP 200/206 代表实际响应，`unknown` 分辨率表示媒体列表未声明分辨率。
@@ -26,13 +26,13 @@
 | GAORA SPORTS | 🇯🇵 日本体育 | unknown | VERIFIED（master/media/segment 200/200/206） | [TvJapan/iptv-jp](https://github.com/TvJapan/iptv-jp) · [HLS](https://naori-test.netgenx.site/pxx.php?shk_cid=cs17#.m3u8) |
 | ゴルフネットワーク | 🇯🇵 日本体育 | unknown | VERIFIED（master/media/segment 200/200/206） | [TvJapan/iptv-jp](https://github.com/TvJapan/iptv-jp) · [HLS](https://naori-test.netgenx.site/pxx.php?shk_cid=cs03#.m3u8) |
 | CCTV-13 新闻 | 🇨🇳 中文新闻 | unknown | VERIFIED（master/media/segment 200/200/206；重定向） | [Free-TV/IPTV](https://github.com/Free-TV/IPTV) · [HLS](http://74.91.26.218:82/live/cctv13hd.m3u8) |
-| FZTV-1 News 新闻综合频道 | 🇨🇳 中文新闻 | unknown | VERIFIED（master/media/segment 200/200/206；重定向） | [Free-TV/IPTV](https://github.com/Free-TV/IPTV) · [HLS](http://live.zohi.tv/video/s10001-fztv-1/index.m3u8) |
+| FZTV-1 News 新闻综合频道 | 🇨🇳 中文新闻 | unknown | VERIFIED（master/media/segment 200/200/206） | [Free-TV/IPTV](https://github.com/Free-TV/IPTV) · [HLS](http://live.zohi.tv/video/s10001-fztv-1/index.m3u8) |
 | Chifeng Comprehensive News Chanel | 🇨🇳 中文新闻 | unknown | VERIFIED（master/media/segment 200/200/200） | [iptv-org/iptv](https://github.com/iptv-org/iptv) · [HLS](http://play1-qk.nmtv.cn/live/1735546697341033.m3u8) |
 | Harbin Comprehensive News Channel | 🇨🇳 中文新闻 | unknown | VERIFIED（master/media/segment 200/200/206） | [iptv-org/iptv](https://github.com/iptv-org/iptv) · [HLS](https://stream.hrbtv.net/xwzh/playlist.m3u8?_upt=ef41dd531755913594) |
 | Lanzhou Comprehensive News Channel | 🇨🇳 中文新闻 | unknown | VERIFIED（master/media/segment 200/200/206） | [iptv-org/iptv](https://github.com/iptv-org/iptv) · [HLS](https://liveplus.lzr.com.cn/xwzh/HD/live.m3u8) |
 | CCTV 高尔夫网球 | 🇨🇳 中文体育 | unknown | VERIFIED（master/media/segment 200/200/206；重定向） | [iptv-org/iptv](https://github.com/iptv-org/iptv) · [HLS](http://38.75.136.137:98/gslb/dsdqpub/gefwq.m3u8?auth=testpub) |
 | CCTV 风云足球 | 🇨🇳 中文体育 | unknown | VERIFIED（master/media/segment 200/200/206；重定向） | [iptv-org/iptv](https://github.com/iptv-org/iptv) · [HLS](http://38.75.136.137:98/gslb/dsdqpub/fyzq.m3u8?auth=testpub) |
-| CCTV-5 体育 | 🇨🇳 中文体育 | unknown | VERIFIED（master/media/segment 200/200/206） | [best-fan/iptv-sources](https://github.com/best-fan/iptv-sources) · [HLS](http://222.169.85.8:9901/tsfile/live/0005_1.m3u8?key=txiptv&playlive=1&authid=0) |
+| CCTV-5 体育 | 🇨🇳 中文体育 | unknown | VERIFIED（master/media/segment 200/200/206；重定向） | [cloudplains/jnsj](https://github.com/cloudplains/jnsj/blob/main/tv202303.txt) · [HLS](http://104.152.209.49:8181/720p/cctv5.m3u8) |
 | CCTV-5+ 体育赛事 | 🇨🇳 中文体育 | unknown | VERIFIED（master/media/segment 200/200/206） | [best-fan/iptv-sources](https://github.com/best-fan/iptv-sources) · [HLS](http://59.39.89.130:60901/tsfile/live/0016_1.m3u8?key=txiptv&playlive=1&authid=0) |
 | Al Jazeera English | 🌍 国际新闻 | 1920x1080 | VERIFIED（master/media/segment 200/200/206） | [Free-TV/IPTV](https://github.com/Free-TV/IPTV) · [HLS](https://live-hls-apps-aje-fa.getaj.net/AJE/index.m3u8) |
 | Bloomberg Television | 🌍 国际新闻 | 1280x720 | VERIFIED（master/media/segment 200/200/206；重定向） | [Free-TV/IPTV](https://github.com/Free-TV/IPTV) · [HLS](https://bloomberg.com/media-manifest/streams/us.m3u8) |
@@ -52,7 +52,7 @@
 | CBS Sports HQ | ⚽ 国际体育 | unknown | VERIFIED（master/media/segment 200/200/206；重定向） | [iptv-org/iptv](https://github.com/iptv-org/iptv) · [HLS](https://jmp2.uk/plu-5e9f2c05172a0f0007db4786.m3u8) |
 | DraftKings Network | ⚽ 国际体育 | 1920x1080 | VERIFIED（master/media/segment 200/200/206） | [iptv-org/iptv](https://github.com/iptv-org/iptv) · [HLS](https://na.linear.zype.com/e0bd0e23-a958-4e43-8164-4f2fef8876a8/fd3614bd-90bf-4530-a277-65ae3a1720c8-zype/live.m3u8) |
 | FIFA+ | ⚽ 国际体育 | 1280x720 | VERIFIED（master/media/segment 200/200/206） | [iptv-org/iptv](https://github.com/iptv-org/iptv) · [HLS](https://d2w9q46ikgrcwx.cloudfront.net/v1/master/3722c60a815c199d9c0ef36c5b73da68a62b09d1/cc-of5cbk3sav3w5/v1/sysdata_s_p_a_fifa_7/samsungheadend_us/latest/main/hls/playlist.m3u8) |
-| FITE 24/7 | ⚽ 国际体育 | 1920x1080 | VERIFIED（master/media/segment 200/200/206） | [iptv-org/iptv](https://github.com/iptv-org/iptv) · [HLS](https://d3d85c7qkywguj.cloudfront.net/scheduler/scheduleMaster/263.m3u8) |
+| FITE 24/7 | ⚽ 国际体育 | 1920x1080 | VERIFIED（master/media/segment 200/200/200） | [iptv-org/iptv](https://github.com/iptv-org/iptv) · [HLS](https://d3d85c7qkywguj.cloudfront.net/scheduler/scheduleMaster/263.m3u8) |
 | FTF Sports | ⚽ 国际体育 | 1920x1080 | VERIFIED（master/media/segment 200/200/206） | [iptv-org/iptv](https://github.com/iptv-org/iptv) · [HLS](https://1593604785.rsc.cdn77.org/FTF/FTF_SCTE.m3u8) |
 | MLB | ⚽ 国际体育 | unknown | VERIFIED（master/media/segment 200/200/206；重定向） | [iptv-org/iptv](https://github.com/iptv-org/iptv) · [HLS](https://jmp2.uk/plu-5e66968a70f34c0007d050be.m3u8) |
 | NBA TV | ⚽ 国际体育 | 1920x1080 | VERIFIED（master/media/segment 200/200/206） | [iptv-org/iptv](https://github.com/iptv-org/iptv) · [HLS](http://23.237.104.106:8080/USA_NBA/index.m3u8) |
@@ -122,15 +122,26 @@
 | CCTV5+ 体育赛事2 | `http://117.136.154.98/PLTV/88888888/224/3221225512/index.m3u8` | URLError: <urlopen error timed out> |
 | CCTV5+ 体育赛事3 | `http://dbiptv.sn.chinamobile.com/PLTV/88888890/224/3221226221/index.m3u8` | URLError: <urlopen error timed out> |
 | CCTV-5+ | `https://myip.pdtvhd.com/Sports/streams/CCTV5pul.m3u8` | HTTPError: HTTP Error 404:  |
+| CCTV-5 candidate 1 | `http://1.85.0.62:808/hls/503/index.m3u8` | URLError: <urlopen error timed out> |
+| CCTV-5 candidate 7 | `http://123.118.55.165:45237/tsfile/live/0005_1.m3u8?key=txiptv&playlive=1&authid=0` | URLError: <urlopen error timed out> |
+| CCTV-5 candidate 8 | `http://111.4.59.41:60901/tsfile/live/1004_1.m3u8?key=txiptv&playlive=0&authid=0` | URLError: <urlopen error timed out> |
+| CCTV-5 candidate 9 | `http://219.135.180.210:18888/hls/5/index.m3u8` | URLError: <urlopen error timed out> |
+| CCTV-5 candidate 10 | `http://140.207.241.2:8080/live/program/live/cctv5hd/4000000/mnf.m3u8` | URLError: <urlopen error timed out> |
+| CCTV-5 原源（后续测速失败） | `http://222.169.85.8:9901/tsfile/live/0005_1.m3u8?key=txiptv&playlive=1&authid=0` | TimeoutError: timed out；已替换 |
 
 ## 未收录但已测试
 
-首轮成功后有 8 条因重复、非持续播放或不符合新闻体育主题而移除。
+首轮成功后有 13 条因重复、完整片段下载过慢、非持续播放或不符合新闻体育主题而移除。
 
 | Channel | Reason |
 |---|---|
 | Chuxiong News Channel [Not 24/7] | not continuous |
+| CCTV5 | timed out in sustained-playback probe |
 | CCTV-5 | duplicate CCTV-5; keep simpler URL |
+| CCTV-5 candidate 2 | high bitrate with intermittent slower-than-realtime segments |
+| CCTV-5 candidate 3 | slower-than-realtime segment download |
+| CCTV-5 candidate 4 | slower-than-realtime segment download |
+| CCTV-5 candidate 5 | slower-than-realtime segment download |
 | Rai News 24 | outside language focus |
 | Euronews English HD | duplicate Euronews English |
 | CBS News 24/7 (720p) | duplicate CBS News |
@@ -141,7 +152,7 @@
 ## 值得关注
 
 - J SPORTS 1–4：Free-TV 的日本列表标记 `NO PUBLIC STREAM`。TvJapan 列出的第三方源在日本出口完成片段 GET，且最终复验通过。该源对并发请求返回过 429，因此最终复验对其串行执行。
-- CCTV-5：两个候选 URL 完成首轮片段读取；最终保留无重定向的 `CCTV5` 来源，并在第二轮通过。CCTV-5+ 也通过。
+- CCTV-5：原源在后续测速中超时，旧备用源完整片段速度不足实时播放。新源来自 `cloudplains/jnsj` 的 CCTV-5 条目；两次测速中四个 10 秒片段分别用约 1.83、1.89、1.83、1.98 秒下载，媒体列表序号从 44374 推进至 44380。更高码率候选有多个 10 秒片段耗时 19–21 秒，故未采用。新源以及其余 59 个频道全部通过最终第二轮 HLS 验证。CCTV-5+ 未改动。
 - TBS NEWS：第三方源通过两轮验证。官方 TBS NEWS DIG 页面是分时段直播，未发现可直接导入 TiviMate 的持续 HLS URL。
 - ANN/テレ朝NEWS：未找到符合本次 HLS 链路验证要求的日本新闻流。目录里的 `ANN News` 实际标识为印度频道，且请求返回 404。
 - NHK総合：一个第三方地上波 URL 的片段读取成功，但该台是综合节目频道，不符合新闻体育主题，因此未收录。
