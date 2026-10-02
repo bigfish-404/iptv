@@ -1,17 +1,18 @@
 # IPTV Verification Report
 
-验证时间：2026-10-01 17:48:17 JST
+验证时间：2026-10-02 16:30:27 JST
 网络位置：Japan（本机日本网络出口）
-候选测试记录：先前 210 条，本次 130 条。
-最终频道：129。分组：🇯🇵 日语频道 40、🇨🇳 中文频道 23、🇭🇰 香港频道 5、🇹🇼 台湾频道 2、🌍 国际频道 22、🏟️ 国际体育 26、🧒 少儿频道 11。
+候选测试记录：截至 2026-10-01 先前 340 条；2026-10-02 新 URL 44 条。
+最终频道：140。分组：🇯🇵 日语频道 41、🇨🇳 中文频道 25、🇭🇰 香港频道 5、🇹🇼 台湾频道 3、🌍 国际频道 25、🏟️ 国际体育 30、🧒 少儿频道 11。
 
 ## 验证范围
 
-- VERIFIED 表示曾实际 GET 原始 URL、跟随重定向、读取 HLS master／media playlist，并 GET 视频片段（HTTP 200/206）；未以 HEAD 或目录存在代替播放验证。
-- 按用户要求，先前已验证的 87 条未重复联网测试；最终 M3U 的频道名及原始 URL 与先前记录逐一核对。
-- 本次新增 42 条先完成 HLS 链路验证，各下载两个完整片段且快于实时；生成最终文件后重新读取并二次 GET，42/42 通过。
+- VERIFIED 表示曾 GET 原始 URL、跟随重定向、读取 HLS master／media playlist，并 GET 视频片段（HTTP 200/206）；不是仅凭频道目录存在。
+- 按用户要求，先前已验证的 129 条未重复联网测试；其中 128 条原样保留，TBS NEWS 因与 TBS NEWS DIG 题材和节目重叠被移除。历史验证日期为 2026-10-01 或更早。
+- 本次新入选 12 条在首轮通过 HLS 链路 GET，各下载两个完整视频片段且最低速度快于实时 1.2 倍；写入候选 M3U 后重新读取，二次 GET 为 13/13 通过。DAZN Combat 随后因只播信息卡而移除。
+- 新候选中 CCTV-1 片段只成功 1/2 且下载太慢；浙江新闻与 Tennis Channel +2 的播放列表在观察期间没有更新；Al Jazeera English 的完整片段下载仅有 0.58 倍实时速度，因此未加入。
 - NBA TV 依用户要求保留：先前 HLS 链路可读，但持续测试 9/10 个完整片段下载慢于节目时长，在 TiviMate 上可能缓冲。
-- 直播源会变化。旧源的 VERIFIED 记录说明先前测试结果，不表示本次重新联网测试。
+- 直播源会变化；历史 VERIFIED 不表示本次重新联网测试。
 
 ## VERIFIED
 
@@ -21,7 +22,6 @@
 | FNNプライムオンライン | 🇯🇵 日语频道 | 1920x1080 | VERIFIED（200/200/206；先前已验证，URL 未变） | [free_all](https://github.com/Free-TV/IPTV) · [HLS](https://cdn-uw2-prod.tsv2.amagi.tv/linear/amg01287-rakutentvjapan-news4-cmaf-rakutenjp/playlist.m3u8) |
 | MBSニュース | 🇯🇵 日语频道 | 1920x1080 | VERIFIED（200/200/206；先前已验证，URL 未变） | [free_all](https://github.com/Free-TV/IPTV) · [HLS](https://cdn-uw2-prod.tsv2.amagi.tv/linear/amg01287-rakutentvjapan-news5-cmaf-rakutenjp/playlist.m3u8) |
 | ウェザーニュースLiVE | 🇯🇵 日语频道 | 1280x720 | VERIFIED（200/200/206；先前已验证，URL 未变） | [free_all](https://github.com/Free-TV/IPTV) · [HLS](https://rch01e-alive-hls.akamaized.net/38fb45b25cdb05a1/out/v1/4e907bfabc684a1dae10df8431a84d21/index.m3u8) |
-| TBS NEWS | 🇯🇵 日语频道 | unknown | VERIFIED（200/200/206；先前已验证，URL 未变） | [tvjapan](https://github.com/TvJapan/iptv-jp) · [HLS](https://naori-test.netgenx.site/pxx.php?shk_cid=cs11#.m3u8) |
 | TBS NEWS DIG | 🇯🇵 日语频道 | unknown | VERIFIED（200/200/206；先前已验证，URL 未变） | koala73/worldmonitor · [HLS](https://dp57jmgi8kb6i.cloudfront.net/out/v1/197c216d82a449f89c55f451d995daed/index_7.m3u8) |
 | 共同通信ニュース | 🇯🇵 日语频道 | 1920x1080 | VERIFIED（200/200/206；先前已验证，URL 未变） | katana0357/Rチャンネル · [HLS](https://cdn-apne1.tsv2.amagi.tv/linear/amg01287-rakutentvjapan-news3hlscmaf-rakutenjp/playlist.m3u8) |
 | 日テレNEWSセレクト | 🇯🇵 日语频道 | 1920x1080 | VERIFIED（200/200/206；先前已验证，URL 未变） | katana0357/Rチャンネル · [HLS](https://cdn-uw2-prod.tsv2.amagi.tv/linear/amg01287-rakutentvjapan-ntv-newsselect-cmaf-rakutenjp/playlist.m3u8) |
@@ -57,6 +57,8 @@
 | WOWOWプライム | 🇯🇵 日语频道 | unknown | VERIFIED（200/200/206；本次二次 GET；完整片段 2/2，最低实时倍速 1.42×） | [free_jp](https://github.com/Free-TV/IPTV/blob/master/playlists/playlist_japan.m3u8) · [HLS](https://naori-test.netgenx.site/pxx.php?shk_cid=bs12#.m3u8) |
 | WOWOWシネマ | 🇯🇵 日语频道 | unknown | VERIFIED（200/200/206；本次二次 GET；完整片段 2/2，最低实时倍速 1.33×） | [free_jp](https://github.com/Free-TV/IPTV/blob/master/playlists/playlist_japan.m3u8) · [HLS](https://naori-test.netgenx.site/pxx.php?shk_cid=bs08#.m3u8) |
 | BS10スターチャンネル | 🇯🇵 日语频道 | unknown | VERIFIED（200/200/206；本次二次 GET；完整片段 2/2，最低实时倍速 1.49×） | [free_jp](https://github.com/Free-TV/IPTV/blob/master/playlists/playlist_japan.m3u8) · [HLS](https://naori-test.netgenx.site/pxx.php?shk_cid=bs07#.m3u8) |
+| CGNTV Japan | 🇯🇵 日语频道 | 1920x1080 | VERIFIED（200/200/206；本次二次 GET；完整片段 2/2，最低实时倍速 8.73×） | [iptv-org/jp_latest.m3u](https://github.com/iptv-org/iptv/blob/master/streams/jp.m3u) · [HLS](https://d2p4mrcwl6ly4.cloudfront.net/out/v1/8d50f69fdbbf411a8d302743e4263716/CGNWebLiveJP.m3u8) |
+| ガキの使い（英語字幕） | 🇯🇵 日语频道 | unknown | VERIFIED（200/200/206；本次二次 GET；完整片段 2/2，最低实时倍速 1.71×） | [iptv-org/jp_latest.m3u](https://github.com/iptv-org/iptv/blob/master/streams/jp.m3u) · [HLS](https://hamada.gaki-no-tsukai.stream/hls/test.m3u8) |
 | CCTV-13 新闻 | 🇨🇳 中文频道 | unknown | VERIFIED（200/200/206；先前已验证，URL 未变） | [free_all](https://github.com/Free-TV/IPTV) · [HLS](http://74.91.26.218:82/live/cctv13hd.m3u8) |
 | FZTV-1 News 新闻综合频道 | 🇨🇳 中文频道 | unknown | VERIFIED（200/200/206；先前已验证，URL 未变） | [free_all](https://github.com/Free-TV/IPTV) · [HLS](http://live.zohi.tv/video/s10001-fztv-1/index.m3u8) |
 | Chifeng Comprehensive News Chanel | 🇨🇳 中文频道 | unknown | VERIFIED（200/200/200；先前已验证，URL 未变） | [iptv_cn](https://github.com/iptv-org/iptv/blob/master/streams/cn.m3u) · [HLS](http://play1-qk.nmtv.cn/live/1735546697341033.m3u8) |
@@ -80,6 +82,8 @@
 | 金砖国家电视台中文频道 | 🇨🇳 中文频道 | 1920x1080 | VERIFIED（200/200/206；本次二次 GET；完整片段 2/2，最低实时倍速 1.96×） | [iptv_cn](https://github.com/iptv-org/iptv/blob/master/streams/cn.m3u) · [HLS](https://chibrics.mediacdn.ru/cdn/brics/chinese/playlist.m3u8) |
 | CCTV-4 中文国际 | 🇨🇳 中文频道 | unknown | VERIFIED（200/200/206；本次二次 GET；完整片段 2/2，最低实时倍速 6.31×） | [free_all](https://github.com/Free-TV/IPTV) · [HLS](http://74.91.26.218:82/live/cctv4hd.m3u8) |
 | CCTV-15 音乐 | 🇨🇳 中文频道 | unknown | VERIFIED（200/200/206；本次二次 GET；完整片段 2/2，最低实时倍速 4.75×） | [free_all](https://github.com/Free-TV/IPTV) · [HLS](http://74.91.26.218:82/live/cctv15hd.m3u8) |
+| CCTV-2 财经 | 🇨🇳 中文频道 | unknown | VERIFIED（200/200/206；本次二次 GET；完整片段 2/2，最低实时倍速 1.75×） | [iptv-org/cn_latest.m3u](https://github.com/iptv-org/iptv/blob/master/streams/cn.m3u) · [HLS](http://74.91.26.218:82/live/cctv2hd.m3u8) |
+| 江苏公共新闻频道 | 🇨🇳 中文频道 | unknown | VERIFIED（200/200/200；本次二次 GET；完整片段 2/2，最低实时倍速 2.78×） | [iptv-org/cn_latest.m3u](https://github.com/iptv-org/iptv/blob/master/streams/cn.m3u) · [HLS](https://jiangning-tv-playing-t.cm.jstv.com/jiangning-tv/jnxwzh.m3u8) |
 | TVB 无线新闻台 | 🇭🇰 香港频道 | unknown | VERIFIED（200/200/206；本次二次 GET；完整片段 2/2，最低实时倍速 13.24×） | [hujingguang/ChinaIPTV](https://github.com/hujingguang/ChinaIPTV) · [HLS](http://r.jdshipin.com/CkuBd) |
 | TVB 翡翠台 | 🇭🇰 香港频道 | 1920x1080 | VERIFIED（200/200/200；本次二次 GET；完整片段 2/2，最低实时倍速 3.62×） | [iptv_hk](https://github.com/iptv-org/iptv/blob/master/streams/hk.m3u) · [HLS](http://103.172.187.30:12000/stream/mytv/null-1/master.m3u8) |
 | Golden Jade | 🇭🇰 香港频道 | 1920x1080 | VERIFIED（200/200/200；本次二次 GET；完整片段 2/2，最低实时倍速 1.37×） | [iptv_hk](https://github.com/iptv-org/iptv/blob/master/streams/hk.m3u) · [HLS](http://103.172.187.30:12000/stream/mytv/null-12/master.m3u8) |
@@ -87,6 +91,7 @@
 | 美亚电影台 | 🇭🇰 香港频道 | 1920x1080 | VERIFIED（200/200/200；先前已验证，URL 未变） | [iptv_hk](https://github.com/iptv-org/iptv/blob/master/streams/hk.m3u) · [HLS](http://103.172.187.30:12000/stream/mytv/null-9/master.m3u8) |
 | 大立电视 | 🇹🇼 台湾频道 | unknown | VERIFIED（200/200/206；本次二次 GET；完整片段 2/2，最低实时倍速 9.51×） | [iptv_tw](https://github.com/iptv-org/iptv/blob/master/streams/tw.m3u) · [HLS](http://www.dalitv.com.tw:4568/live/dali/index.m3u8) |
 | 台湾原住民族电视 | 🇹🇼 台湾频道 | 1280x720 | VERIFIED（200/200/206；本次二次 GET；完整片段 2/2，最低实时倍速 3.79×） | [iptv_tw](https://github.com/iptv-org/iptv/blob/master/streams/tw.m3u) · [HLS](https://streamipcfapp.akamaized.net/live/_definst_/live_720/key_b1500.m3u8) |
+| CGNTV 中文 | 🇹🇼 台湾频道 | 1920x1080 | VERIFIED（200/200/206；本次二次 GET；完整片段 2/2，最低实时倍速 11.31×） | [iptv-org/tw_latest.m3u](https://github.com/iptv-org/iptv/blob/master/streams/tw.m3u) · [HLS](https://d3e05csss9c272.cloudfront.net/out/v1/f0bf71c57581470fb9379f603e8f5d83/CGNWebLiveCN.m3u8) |
 | NHK WORLD-JAPAN | 🌍 国际频道 | 1920x1080 | VERIFIED（200/200/206；先前已验证，URL 未变） | iptv_news · [HLS](https://masterpl.hls.nhkworld.jp/hls/w/live/smarttv.m3u8) |
 | Bloomberg Television | 🌍 国际频道 | 1280x720 | VERIFIED（200/200/206；先前已验证，URL 未变） | [free_all](https://github.com/Free-TV/IPTV) · [HLS](https://bloomberg.com/media-manifest/streams/us.m3u8) |
 | Bloomberg TV+ | 🌍 国际频道 | 1920x1080 | VERIFIED（200/200/206；先前已验证，URL 未变） | [free_all](https://github.com/Free-TV/IPTV) · [HLS](https://bloomberg.com/media-manifest/streams/phoenix-us.m3u8) |
@@ -109,6 +114,9 @@
 | Dry Bar Comedy+ | 🌍 国际频道 | 1280x720 | VERIFIED（200/200/206；先前已验证，URL 未变） | [iptv_us](https://github.com/iptv-org/iptv/blob/master/streams/us.m3u) · [HLS](https://drybar-drybarcomedy-1-au.samsung.wurl.tv/playlist.m3u8) |
 | SNL Vault | 🌍 国际频道 | 1920x1080 | VERIFIED（200/200/206；先前已验证，URL 未变） | [iptv_us](https://github.com/iptv-org/iptv/blob/master/streams/us.m3u) · [HLS](https://d4whmvwm0rdvi.cloudfront.net/10007/99993017/hls/master.m3u8?ads.xumo_channelId=99993017) |
 | The Chat Show Channel | 🌍 国际频道 | 1920x1080 | VERIFIED（200/200/206；先前已验证，URL 未变） | [iptv_us](https://github.com/iptv-org/iptv/blob/master/streams/us.m3u) · [HLS](https://amg00426-littledotstudio-thechatshow-samsungnz-uqmtt.amagi.tv/playlist/amg00426-littledotstudio-thechatshow-samsungnz/playlist.m3u8) |
+| Sky News | 🌍 国际频道 | unknown | VERIFIED（200/200/206；本次二次 GET；完整片段 2/2，最低实时倍速 2.96×） | [iptv-org/news_latest.m3u](https://iptv-org.github.io/iptv/categories/news.m3u) · [HLS](https://jmp2.uk/plu-55b285cd2665de274553d66f.m3u8) |
+| CGTN English | 🌍 国际频道 | 1920x1080 | VERIFIED（200/200/206；本次二次 GET；完整片段 2/2，最低实时倍速 2.76×） | [iptv-org/news_latest.m3u](https://iptv-org.github.io/iptv/categories/news.m3u) · [HLS](https://amg00405-rakutentv-cgtn-rakuten-i9tar.amagi.tv/master.m3u8) |
+| Arirang UN | 🌍 国际频道 | 1920x1080 | VERIFIED（200/200/206；本次二次 GET；完整片段 2/2，最低实时倍速 4.27×） | [iptv-org/news_latest.m3u](https://iptv-org.github.io/iptv/categories/news.m3u) · [HLS](https://amdlive-ch02-ctnd-com.akamaized.net/arirang_2ch/smil:arirang_2ch.smil/playlist.m3u8) |
 | ACC Digital Network | 🏟️ 国际体育 | 1920x1080 | VERIFIED（200/200/206；先前已验证，URL 未变） | [iptv_us](https://github.com/iptv-org/iptv/blob/master/streams/us.m3u) · [HLS](https://raycom-accdn-firetv.amagi.tv/playlist.m3u8) |
 | beIN SPORTS XTRA | 🏟️ 国际体育 | 1920x1080 | VERIFIED（200/200/206；先前已验证，URL 未变） | [iptv_us](https://github.com/iptv-org/iptv/blob/master/streams/us.m3u) · [HLS](https://bein-xtra-bein.amagi.tv/playlist.m3u8) |
 | Bellator MMA | 🏟️ 国际体育 | unknown | VERIFIED（200/200/206；先前已验证，URL 未变） | [iptv_us](https://github.com/iptv-org/iptv/blob/master/streams/us.m3u) · [HLS](https://jmp2.uk/plu-5ebc8688f3697d00072f7cf8.m3u8) |
@@ -135,6 +143,10 @@
 | FIFA+ Women | 🏟️ 国际体育 | 1280x720 | VERIFIED（200/200/206；先前已验证，URL 未变） | iptv_sports · [HLS](https://cffda8ff.wurl.com/master/f36d25e7e52f1ba8d7e56eb859c636563214f541/U2Ftc3VuZy1nYl9GSUZBUGx1c3dvbWVuX0hMUw/playlist.m3u8) |
 | FloRacing | 🏟️ 国际体育 | 1920x1080 | VERIFIED（200/200/206；先前已验证，URL 未变） | iptv_sports · [HLS](https://amg02278-amg02278c1-flosports-worldwide-7592.playouts.now.amagi.tv/playlist.m3u8) |
 | DAZN Darts x Pluto TV | 🏟️ 国际体育 | unknown | VERIFIED（200/200/206；先前已验证，URL 未变） | iptv_de · [HLS](https://jmp2.uk/plu-64b67f0424ade50008a3be17.m3u8) |
+| ESPN8: The Ocho | 🏟️ 国际体育 | 1920x1080 | VERIFIED（200/200/206；本次二次 GET；完整片段 2/2，最低实时倍速 4.68×） | [iptv-org/sports_latest.m3u](https://iptv-org.github.io/iptv/categories/sports.m3u) · [HLS](https://d3b6q2ou5kp8ke.cloudfront.net/ESPNTheOcho.m3u8) |
+| MMA-TV.com | 🏟️ 国际体育 | 1920x1080 | VERIFIED（200/200/206；本次二次 GET；完整片段 2/2，最低实时倍速 1.89×） | [iptv-org/sports_latest.m3u](https://iptv-org.github.io/iptv/categories/sports.m3u) · [HLS](https://streams2.sofast.tv/vglive-sk-462904/playlist.m3u8) |
+| PFL MMA | 🏟️ 国际体育 | unknown | VERIFIED（200/200/206；本次二次 GET；完整片段 2/2，最低实时倍速 2.41×） | [iptv-org/sports_latest.m3u](https://iptv-org.github.io/iptv/categories/sports.m3u) · [HLS](https://jmp2.uk/plu-64f6180130ab3300083d896b.m3u8) |
+| Sky Racing 1 | 🏟️ 国际体育 | 1280x720 | VERIFIED（200/200/206；本次二次 GET；完整片段 2/2，最低实时倍速 4.76×） | [iptv-org/sports_latest.m3u](https://iptv-org.github.io/iptv/categories/sports.m3u) · [HLS](https://636ffd31f0e12.streamlock.net/RacingStream1/RacingStream1/playlist.m3u8) |
 | NHK Eテレ（東京） | 🧒 少儿频道 | unknown | VERIFIED（200/200/206；先前已验证，URL 未变） | [free_jp](https://github.com/Free-TV/IPTV/blob/master/playlists/playlist_japan.m3u8) · [HLS](https://naori-test.netgenx.site/pxx.php?shk_cid=hdgd02#.m3u8) |
 | キッズ（Rチャンネル） | 🧒 少儿频道 | 1920x1080 | VERIFIED（200/200/206；本次二次 GET；完整片段 2/2，最低实时倍速 8.38×） | Rチャンネル / Japanese_IPTV · [HLS](https://cdn-apne1.tsv2.amagi.tv/linear/amg01287-rakutentvjapan-kids-english-cmaf-rakutenjp/playlist.m3u8) |
 | 手塚プロダクションTV | 🧒 少儿频道 | 1280x720 | VERIFIED（200/200/206；本次二次 GET；完整片段 2/2，最低实时倍速 6.19×） | Rチャンネル / Japanese_IPTV · [HLS](https://cdn-apne1.tsv2.amagi.tv/linear/amg01287-rakutentvjapan-anime5-cmaf-rakutenjp/playlist.m3u8) |
@@ -312,24 +324,34 @@
 | 环球新闻（台湾） | `https://raw.githubusercontent.com/ChiSheng9/iptv/master/TV02.m3u8` | ValueError: latest segments inaccessible: ValueError: empty/HTML segment |
 | 三立 iNEWS | `https://ythls.armelin.one/channel/UCoNYj9OFHZn3ACmmeRCPwbA.m3u8` | URLError: <urlopen error [Errno 11001] getaddrinfo failed> |
 | 台视新闻 | `https://ythls.armelin.one/channel/UC8ROUUjHzEQm-ndb69CX8Ww.m3u8` | URLError: <urlopen error [Errno 11001] getaddrinfo failed> |
+| NHK WORLD PREMIUM | `https://media-tyo.hls.nhkworld.jp/hls/wp/live/master.m3u8` | HTTPError: HTTP Error 403: Forbidden |
+| CCTV-11 戏曲 | `https://xykt-fix.github.io/play/a02b/index.m3u8` | ValueError: all sampled variants failed: TimeoutError: The read operation timed out \| TimeoutError: The read operation timed out \| TimeoutError: The read operation timed out \| TimeoutError: The read operation timed out |
+| 南昌新闻综合 | `https://play-live-hls.jxtvcn.com.cn/live-city/tv_nanchang.m3u8` | HTTPError: HTTP Error 403: Forbidden |
+| 深圳卫视 | `http://39.134.24.166/dbiptv.sn.chinamobile.com/PLTV/88888890/224/3221226205/index.m3u8` | URLError: <urlopen error timed out> |
+| 百事通体育 1 | `http://112.25.48.68/live/program/live/hdnba1/4000000/mnf.m3u8` | URLError: <urlopen error timed out> |
+| 百事通体育 2 | `http://112.25.48.68/live/program/live/hdnba2/4000000/mnf.m3u8` | URLError: <urlopen error timed out> |
+| 百事通体育 5 | `http://112.25.48.68/live/program/live/hdnba5/4000000/mnf.m3u8` | URLError: <urlopen error timed out> |
+| 南京少儿 | `https://live.nbs.cn/channels/njtv/sepd/m3u8:500k/live.m3u8` | URLError: <urlopen error [Errno 11001] getaddrinfo failed> |
+| 耀才财经台 | `http://202.69.67.66:443/webcast/bshdlive-pc/playlist.m3u8` | URLError: <urlopen error timed out> |
+| 凤凰资讯 | `http://php.17186.eu.org/phtv/fhzx.m3u8` | TimeoutError: The read operation timed out |
+| 大爱二台 | `https://pulltv2.wanfudaluye.com/live/tv2.m3u8` | HTTPError: HTTP Error 403: Forbidden |
+| GOOD TV 卡通 | `https://live.streamingfast.net/osmflivech45.m3u8` | ValueError: all sampled variants failed: HTTPError: HTTP Error 404: Not Found |
+| Fight Network | `https://d12a2vxqkkh1bo.cloudfront.net/hls/main.m3u8` | TimeoutError: The read operation timed out |
 
-## 已打开但未收录
+## 已测试但未收录
 
 | Channel | Reason |
 |---|---|
-| CCTV-1 综合 | 媒体序号 17791→45415 大幅跳变；未确认连续节目流 |
-| CCTV-2 财经 | 完整片段最低实时倍速 0.71×，易缓冲 |
-| CCTV-11 戏曲 | 媒体序号 45409→64484 大幅跳变 |
-| 福州少儿 | HLS 链路首轮可读，但两个完整片段均下载失败 |
-| TVBS 亚洲 | 完整片段最低实时倍速仅 1.06×，稳定余量不足 |
-| 安徽卫视 | 两个完整片段仅一个成功 |
-| 河北卫视 | 最低实时倍速 1.28×，优先保留更快的地方台 |
-| ショップチャンネル | 虽通过测试，因频道内容与本次需求相关性低未加入 |
+| GSTV、ショップチャンネル | HLS 和完整片段通过，但购物内容与节目需求相关性低 |
+| CCTV-1 综合 | 完整片段 1/2 成功，另一个 404；最慢下载速度低于实时 |
+| 浙江新闻 | 播放列表与片段在两次相隔 12 秒的 GET 中没有更新 |
+| Tennis Channel +2 | 播放列表与片段在两次相隔 12 秒的 GET 中没有更新 |
+| Al Jazeera English | 完整片段最低实时倍速仅 0.58×，容易缓冲 |
+| DAZN Combat | 片段文件明确为 DAZN Combat 频道信息卡，未见赛事节目 |
+| TBS NEWS | 与 TBS NEWS DIG 内容重叠；保留后者的直接 CDN，移除前者第三方中转 |
 
 ## 需关注
 
-- 香港 HOY 与港台电视候选在日本网络返回 HTTP 403；本次可播放的香港频道为 TVB 无线新闻台、翡翠台、Golden Jade、亚洲剧场和美亚电影台。
-- 台湾新闻台候选多数超时、DNS 失败或片段不可访问；通过完整验证的是大立电视与台湾原住民族电视。YouTube 网页地址未冒充可导入 TiviMate 的 HLS。
-- しまじろうチャンネル返回 504；キッズステーション、キッズ（Rチャンネル）、手塚プロダクションTV 与其他入选少儿台通过完整片段测试。
-- 日本地上波及 BS 的部分源来自第三方中转；本次完成片段 GET 与完整片段测速，但这些中转服务可能变化。
-- J SPORTS 1–4 当前源保留；Free-TV 日本列表标记无公开源。CCTV-5 与 NBA TV 的用户反馈卡顿已记录，当前没有经验证更稳定的 NBA TV 替代源。
+- 现有日本地上波、BS 与 J SPORTS 部分源来自第三方中转；验证记录只证明测试时片段可读。
+- 香港 HOY 与港台电视候选在日本网络返回 HTTP 403，本次没有新的香港频道通过。
+- NBA TV、CCTV-5 的 TiviMate 卡顿反馈保留；本次没有经过完整验证的更稳定 NBA TV 替代地址。
